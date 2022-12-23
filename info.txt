@@ -1,0 +1,27 @@
+   int currentPasswordLength =0;
+    Random  character  = new Random();
+
+    private void passwordGenerator(int passwordLength)
+    {
+        String allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&";
+        String randomPassword="";
+        
+        for(int i = 0; i < password.Length; i++)
+        {
+            int randomNum  = character.Next(0,allCharacters.Length);
+            randomPassword += allCharacters[randomNum];
+        }
+        passwordLabel.Text = randomPassword;
+    }
+
+
+
+
+
+    // first  argument represents object raising  event 
+    // second argument is the event argument
+    private void EventName(object sender, EventArgs e)
+    {
+
+    }
+

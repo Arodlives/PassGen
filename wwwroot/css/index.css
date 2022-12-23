@@ -1,0 +1,39 @@
+.btngeneratediv
+{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+} 
+label
+{
+    border:1px solid black;
+    border-radius: 3px;
+    height: 40px;
+    width: 210px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+#btngenerate
+{
+    height: auto;
+    width: 180px;
+    display: block;
+    align-items: center;
+    position:absolute;
+    top: 105px;
+    /*left: 15px;*/
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+}

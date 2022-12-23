@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/index.css"/>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Try Out</h1>
+    <p>Our Password Generator Below Free Of Charge </p>
+</div>
+
+
+<div class="btngeneratediv">
+    <div>
+        <h1>Times Clicked @Context.Session.GetInt32("Count")</h1>
+    </div>
+    
+    <label>@Context.Session.GetString("NewPassword")</label>
+    <a asp-action="" class="btn btn-warning" id="btngenerate">Generate Password</a>
+    
+</div>
